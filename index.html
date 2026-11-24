@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Culina — A Culinary Journey at the Nile | Ritz-Carlton Nile, Cairo</title>
+<meta name="description" content="Culina — fine dining buffet at the Ritz-Carlton Nile, 1113 Corniche El Nil, Downtown Cairo. Six live stations, Nile views, Friday jazz brunch & premium reservations.">
+<meta name="theme-color" content="#1A3A5C">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%231A3A5C'/><text y='74' x='50' text-anchor='middle' font-size='62' fill='%23C9A961' font-family='Georgia,serif'>C</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Lato:wght@300;400;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<!-- ===================== PRELOADER ===================== -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="preloader-inner">
+    <svg class="preloader-emblem" viewBox="0 0 140 140" fill="none" aria-hidden="true">
+      <circle class="pl-ring" cx="70" cy="70" r="62" stroke="#C9A961" stroke-width="1.5"/>
+      <g class="pl-tools" stroke="#C9A961" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+        <!-- fork -->
+        <path d="M50 34 V52 C50 60 57 62 57 68 V104"/>
+        <path d="M64 34 V52 C64 60 57 62 57 68"/>
+        <path d="M57 34 V52"/>
+        <!-- spoon -->
+        <ellipse cx="86" cy="47" rx="9.5" ry="13.5"/>
+        <path d="M86 60 C86 70 82 72 82 78 V104"/>
+      </g>
+    </svg>
+    <span class="preloader-word">CULINA</span>
+    <span class="preloader-line"><i></i></span>
+  </div>
+</div>
+
+<a class="skip-link" href="#home">Skip to content</a>
+
+<!-- ===================== NAVIGATION ===================== -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#home" aria-label="Culina home">
+      <svg class="brand-mark" viewBox="0 0 44 44" aria-hidden="true">
+        <circle cx="22" cy="22" r="20" stroke="#C9A961" stroke-width="1.2" fill="none"/>
+        <path d="M16 13 v7 c0 3 3 3.6 3 5.6 v6.4 M22 13 v7 c0 3-3 3.6-3 5.6 M19 13 v7" stroke="#C9A961" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+        <ellipse cx="28.5" cy="18" rx="3.2" ry="4.6" stroke="#C9A961" stroke-width="1.4" fill="none"/>
+        <path d="M28.5 22.6 c0 3.4-1.6 4.2-1.6 6.2 v4.2" stroke="#C9A961" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+      </svg>
+      <span class="brand-text">
+        <strong>CULINA</strong>
+        <small>Ritz-Carlton Nile</small>
+      </span>
+    </a>
+
+    <nav class="nav-links" id="navLinks" aria-label="Primary">
+      <a href="#home" class="is-active">Home</a>
+      <a href="#buffet">The Buffet</a>
+      <a href="#events">Events</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#reserve">Reservations</a>
+      <a class="nav-cta btn btn-gold" href="#reserve">Book a Table</a>
+    </nav>
+
+    <button class="nav-burger" id="navBurger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ===================== HERO — NILE PANORAMA 3D ===================== -->
+<section class="hero" id="home">
+
+  <!-- sky layer -->
+  <div class="hero-sky" data-depth="6" aria-hidden="true">
+    <div class="stars" id="stars"></div>
+    <div class="moon"></div>
+    <div class="haze haze-a"></div>
+    <div class="haze haze-b"></div>
+  </div>
+
+  <!-- city skyline layer -->
+  <div class="hero-city" data-depth="14" aria-hidden="true">
+    <svg class="skyline" id="skyline" viewBox="0 0 1440 320" preserveAspectRatio="none">
+      <defs>
+        <clipPath id="skyClip">
+          <path d="M0,320 L0,250 L48,250 L48,218 L112,218 L112,240 L150,240 L150,186 L206,186 L206,212 L252,212 L252,164 L318,164 L318,196 L364,196 L364,204 L378,204 L378,128 L383,114 L393,114 L398,128 L398,204 L420,204 A44,44 0 0 1 508,204 L528,204 L528,124 L533,110 L543,110 L548,124 L548,204 L590,204 L590,232 L644,232 L644,198 L700,198 L700,224 L742,224 L742,170 L806,170 L806,206 L848,206 L876,206 L882,194 L882,126 L872,118 L868,96 C868,74 880,58 896,50 L896,30 L904,30 L904,50 C920,58 932,74 932,96 L928,118 L918,126 L918,194 L924,206 L952,206 L1004,206 L1004,176 L1058,176 L1058,214 L1104,214 L1104,160 L1170,160 L1170,198 L1216,198 L1216,148 L1284,148 L1284,192 L1330,192 L1330,236 L1386,236 L1386,208 L1440,208 L1440,320 Z"/>
+        </clipPath>
+      </defs>
+      <g class="sky-body">
+        <path d="M0,320 L0,250 L48,250 L48,218 L112,218 L112,240 L150,240 L150,186 L206,186 L206,212 L252,212 L252,164 L318,164 L318,196 L364,196 L364,204 L378,204 L378,128 L383,114 L393,114 L398,128 L398,204 L420,204 A44,44 0 0 1 508,204 L528,204 L528,124 L533,110 L543,110 L548,124 L548,204 L590,204 L590,232 L644,232 L644,198 L700,198 L700,224 L742,224 L742,170 L806,170 L806,206 L848,206 L876,206 L882,194 L882,126 L872,118 L868,96 C868,74 880,58 896,50 L896,30 L904,30 L904,50 C920,58 932,74 932,96 L928,118 L918,126 L918,194 L924,206 L952,206 L1004,206 L1004,176 L1058,176 L1058,214 L1104,214 L1104,160 L1170,160 L1170,198 L1216,198 L1216,148 L1284,148 L1284,192 L1330,192 L1330,236 L1386,236 L1386,208 L1440,208 L1440,320 Z"/>
+      </g>
+      <g clip-path="url(#skyClip)" class="windows" id="windows"></g>
+    </svg>
+
+    <!-- Nile reflection (cloned skyline by JS) -->
+    <div class="hero-reflection">
+      <div class="refl-flip"><div class="refl-target" id="reflTarget"></div></div>
+    </div>
+  </div>
+
+  <!-- water layer -->
+  <div class="hero-water" data-depth="14" aria-hidden="true">
+    <div class="water-shimmer"></div>
+    <div class="water-lights"></div>
+  </div>
+
+  <!-- floating objects -->
+  <div class="hero-floaters" data-depth="40" aria-hidden="true">
+    <svg class="floater floater-cloche" viewBox="0 0 160 160">
+      <g stroke="#C9A961" stroke-width="2" fill="rgba(201,169,97,.07)" stroke-linecap="round">
+        <path d="M30 118 h100"/>
+        <path d="M38 118 c0-30 22-52 42-52 s42 22 42 52"/>
+        <circle cx="80" cy="58" r="6"/>
+        <path d="M80 52 v-8"/>
+        <path d="M56 96 c4-12 12-20 22-24" fill="none" opacity=".7"/>
+      </g>
+    </svg>
+    <svg class="floater floater-glass" viewBox="0 0 120 200">
+      <g stroke="#E7D6A8" stroke-width="2" fill="rgba(201,169,97,.10)" stroke-linecap="round">
+        <path d="M36 16 h48 c0 34-10 54-24 60 v58"/>
+        <path d="M60 134 c0 8-14 10-14 20 h28 c0-10-14-12-14-20"/>
+        <path d="M40 40 c0 18 8 30 20 34" fill="none" opacity=".65"/>
+        <path d="M38 46 h44" opacity=".55"/>
+      </g>
+    </svg>
+    <svg class="floater floater-plate" viewBox="0 0 200 120">
+      <g stroke="#C9A961" stroke-width="2" fill="rgba(250,250,250,.05)" stroke-linecap="round">
+        <ellipse cx="100" cy="70" rx="76" ry="26"/>
+        <ellipse cx="100" cy="70" rx="52" ry="16" opacity=".6"/>
+        <path d="M30 40 v40 M26 40 v14 M34 40 v14" fill="none"/>
+        <path d="M172 40 c8 0 8 16 0 18 v22" fill="none"/>
+      </g>
+    </svg>
+    <span class="gold-dust d1"></span>
+    <span class="gold-dust d2"></span>
+    <span class="gold-dust d3"></span>
+    <span class="gold-dust d4"></span>
+    <span class="gold-dust d5"></span>
+  </div>
+
+  <div class="hero-vignette" aria-hidden="true"></div>
+
+  <!-- hero content -->
+  <div class="hero-content" data-depth="8">
+    <p class="hero-eyebrow reveal">The Ritz-Carlton Nile &nbsp;·&nbsp; Downtown Cairo</p>
+    <h1 class="hero-title">
+      <span class="reveal" style="--d:.1s">Culina</span>
+      <span class="hero-tagline reveal" style="--d:.25s">A Culinary Journey at the Nile</span>
+    </h1>
+    <p class="hero-ar reveal" dir="rtl" lang="ar" style="--d:.38s">تجربة طعام فاخرة على ضفاف النيل</p>
+
+    <div class="hero-rating reveal" style="--d:.48s" aria-label="Rated 4.8 out of 5 from over 980 reviews">
+      <span class="stars-row" aria-hidden="true">★ ★ ★ ★ ★</span>
+      <strong>4.8</strong>
+      <span>980+ guest reviews</span>
+    </div>
+
+    <div class="hero-cta reveal" style="--d:.6s">
+      <a class="btn btn-gold" href="#reserve">Book Your Table</a>
+      <a class="btn btn-ghost" href="#reserve" lang="ar" dir="rtl">احجز الآن</a>
+      <a class="btn btn-text" href="#buffet">Explore the Buffet ↓</a>
+    </div>
+  </div>
+
+  <div class="scroll-cue" aria-hidden="true"><span></span></div>
+</section>
+
+<!-- ===================== FACTS STRIP ===================== -->
+<section class="strip" aria-label="Highlights">
+  <div class="container strip-grid">
+    <div class="strip-item reveal">
+      <span class="strip-ic">⌖</span>
+      <div><strong>1113 Corniche El Nil</strong><small>Downtown Cairo</small></div>
+    </div>
+    <div class="strip-item reveal" style="--d:.1s">
+      <span class="strip-ic">★</span>
+      <div><strong>4.8 / 5 Rating</strong><small>980+ verified reviews</small></div>
+    </div>
+    <div class="strip-item reveal" style="--d:.2s">
+      <span class="strip-ic">✿</span>
+      <div><strong>Six Live Stations</strong><small>International buffet daily</small></div>
+    </div>
+    <div class="strip-item reveal" style="--d:.3s">
+      <span class="strip-ic">♪</span>
+      <div><strong>Friday Jazz Brunch</strong><small>Live music on the terrace</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== BUFFET EXPERIENCE ===================== -->
+<section class="buffet section-dark" id="buffet">
+  <div class="marble-vein" aria-hidden="true"></div>
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow"><i></i>The Buffet Experience<i></i></p>
+      <h2>Six Stations, One Journey</h2>
+      <p class="lede">From sunrise pastries to the midnight dessert palace — glide through our interactive showcase of the live counters that make Culina Cairo’s most celebrated buffet.</p>
+    </header>
+
+    <div class="stage-wrap reveal" style="--d:.15s">
+      <button class="stage-arrow prev" id="stagePrev" aria-label="Previous station">‹</button>
+      <div class="stage" id="stage" tabindex="0" aria-label="Buffet stations carousel">
+        <div class="track" id="track">
+
+          <article class="station" data-i="0">
+            <div class="station-art">
+              <span class="station-num">01</span>
+              <svg viewBox="0 0 160 160" fill="none" stroke="#C9A961" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M34 74 h44 v22 a22 22 0 0 1-22 22 h0 a22 22 0 0 1-22-22 z"/>
+                <path d="M78 80 h10 a11 11 0 0 1 0 22 h-10"/>
+                <path d="M44 64 c0-7 6-7 6-14 M58 64 c0-7 6-7 6-14" opacity=".75"/>
+                <path d="M28 128 h60"/>
+                <path d="M104 118 c14-4 24-16 26-32 8 6 10 18 6 28 4 6 2 14-6 16-14 4-28-2-26-12z"/>
+                <path d="M108 112 c8-6 18-12 26-14" opacity=".6"/>
+              </svg>
+            </div>
+            <div class="station-body">
+              <h3>Breakfast Station</h3>
+              <p>Freshly baked viennoiserie, eggs any way, artisan cheeses, cold cuts and cold-pressed juices to greet the Cairo sunrise.</p>
+              <div class="chips"><span>Daily</span><span>07:00 – 11:00</span></div>
+            </div>
+          </article>
+
+          <article class="station" data-i="1">
+            <div class="station-art">
+              <span class="station-num">02</span>
+              <svg viewBox="0 0 160 160" fill="none" stroke="#C9A961" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M32 86 h64 c0 22-14 36-32 36 S32 108 32 86z"/>
+                <path d="M40 86 c6-10 16-14 24-14 s18 4 24 14" opacity=".7"/>
+                <circle cx="64" cy="70" r="4" opacity=".8"/>
+                <path d="M110 122 l30-52 30 52 z" transform="translate(-18 -6)"/>
+                <path d="M124 116 h24" opacity=".6"/>
+                <circle cx="42" cy="132" r="7"/>
+                <circle cx="62" cy="136" r="7"/>
+              </svg>
+            </div>
+            <div class="station-body">
+              <h3>Middle Eastern Corner</h3>
+              <p>Whipped hummus, smoky moutabal, table-side harees, taboon bread from the stone oven and charcoal-kissed kofta.</p>
+              <div class="chips"><span>Live counter</span><span>Levantine &amp; Egyptian</span></div>
+            </div>
+          </article>
+
+          <article class="station" data-i="2">
+            <div class="station-art">
+              <span class="station-num">03</span>
+              <svg viewBox="0 0 160 160" fill="none" stroke="#C9A961" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M36 88 h60 c0 24-13 40-30 40 S36 112 36 88z"/>
+                <path d="M46 88 c4-8 12-12 20-12" opacity=".7"/>
+                <path d="M104 40 l28 74 M114 38 l26 72" />
+                <circle cx="58" cy="64" r="12"/>
+                <path d="M46 64 h24" opacity=".6"/>
+                <path d="M84 66 c0-10 8-16 16-14" opacity=".7"/>
+              </svg>
+            </div>
+            <div class="station-body">
+              <h3>Asian Express</h3>
+              <p>Sushi and sashimi on ice, made-to-order dim sum, wok-fired noodles and a steaming ramen bar by our Asian brigade.</p>
+              <div class="chips"><span>Chef’s table</span><span>Fresh daily</span></div>
+            </div>
+          </article>
+
+          <article class="station" data-i="3">
+            <div class="station-art">
+              <span class="station-num">04</span>
+              <svg viewBox="0 0 160 160" fill="none" stroke="#C9A961" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M34 92 c8-16 28-24 46-20 16 4 26 16 24 30-2 14-18 22-36 20-22-2-40-14-34-30z"/>
+                <path d="M52 88 c8-6 20-8 30-4" opacity=".65"/>
+                <path d="M120 122 c-10-10-8-24 2-34-2 8 4 12 8 8 8 10 8 22-2 30" />
+                <path d="M40 134 h84" opacity=".7"/>
+              </svg>
+            </div>
+            <div class="station-body">
+              <h3>Grill Station</h3>
+              <p>Prime cuts at the live carving board, lamb chops over open flame, grilled jumbo prawns and seasonal market vegetables.</p>
+              <div class="chips"><span>Live fire</span><span>Carving board</span></div>
+            </div>
+          </article>
+
+          <article class="station" data-i="4">
+            <div class="station-art">
+              <span class="station-num">05</span>
+              <svg viewBox="0 0 160 160" fill="none" stroke="#C9A961" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M46 132 v-46 l34-18 34 18 v46 z"/>
+                <path d="M46 102 h68" opacity=".7"/>
+                <path d="M46 118 h68" opacity=".7"/>
+                <path d="M80 68 c-6-8-2-16 6-18-2 6 4 8 6 4 4 8 0 16-8 18-4 0-6-4-4-4z"/>
+                <path d="M60 86 c6 4 12 4 20 0 M84 86 c6 4 12 4 20 0" opacity=".6"/>
+              </svg>
+            </div>
+            <div class="station-body">
+              <h3>Dessert Palace</h3>
+              <p>French patisserie, Arabic sweets, a flowing chocolate fountain, live crêpes and a celebration cake corner.</p>
+              <div class="chips"><span>24 desserts</span><span>Live crêpes</span></div>
+            </div>
+          </article>
+
+          <article class="station" data-i="5">
+            <div class="station-art">
+              <span class="station-num">06</span>
+              <svg viewBox="0 0 160 160" fill="none" stroke="#C9A961" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M30 84 c16-18 44-18 60 0-16 18-44 18-60 0z"/>
+                <path d="M90 84 l18-12 v24 z"/>
+                <circle cx="48" cy="80" r="2.6"/>
+                <path d="M112 118 c12-6 20-18 18-32 10 6 14 20 8 32-6 10-20 14-30 8" transform="rotate(14 124 108)"/>
+                <path d="M34 132 h96" opacity=".7"/>
+                <path d="M64 132 c0-8 8-14 16-14 s16 6 16 14" opacity=".7"/>
+              </svg>
+            </div>
+            <div class="station-body">
+              <h3>Fresh Seafood Bar</h3>
+              <p>Oysters on crushed ice, jumbo prawns, ceviche, smoked salmon and the day’s catch from the Mediterranean coast.</p>
+              <div class="chips"><span>On ice</span><span>Daily catch</span></div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+      <button class="stage-arrow next" id="stageNext" aria-label="Next station">›</button>
+    </div>
+
+    <div class="stage-dots" id="stageDots" role="tablist" aria-label="Station navigation"></div>
+
+    <!-- Friday Brunch feature -->
+    <div class="brunch reveal">
+      <div class="brunch-glow" aria-hidden="true"></div>
+      <div class="brunch-text">
+        <p class="eyebrow light"><i></i>Every Friday · 12:30 – 16:00</p>
+        <h3>Friday Brunch with Live Jazz</h3>
+        <p>Nile terrace, smooth saxophone, free-flowing sparkling, carving stations and the city glinting across the water — the most talked-about table in Cairo.</p>
+      </div>
+      <a class="btn btn-gold" href="#reserve">Reserve Friday Brunch</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SPECIAL EVENTS ===================== -->
+<section class="events section-light" id="events">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow dark"><i></i>Special Events<i></i></p>
+      <h2>Occasions, Curated</h2>
+      <p class="lede">Whether it is a candle-lit iftar, a jazz-soaked brunch or a boardroom dinner above the Nile — our maître d’ designs every detail around you.</p>
+    </header>
+
+    <div class="event-grid">
+      <article class="event-card reveal">
+        <span class="event-num">01</span>
+        <svg class="event-ic" viewBox="0 0 64 64" fill="none" stroke="#C9A961" stroke-width="2" stroke-linecap="round">
+          <path d="M40 12 a18 18 0 1 0 12 30 A20 20 0 0 1 40 12z"/>
+          <path d="M20 40 h16 M24 46 h8 M28 52 v6" opacity=".8"/>
+          <path d="M14 58 h36" opacity=".6"/>
+        </svg>
+        <h3>Ramadan Iftar Buffet</h3>
+        <p>Dates and apricot juice at sunset, live harees and lentil soup stations, oriental sweets trolleys and nightly entertainment throughout the holy month.</p>
+        <a class="link-arrow" href="#reserve">Plan your iftar</a>
+      </article>
+
+      <article class="event-card reveal" style="--d:.1s">
+        <span class="event-num">02</span>
+        <svg class="event-ic" viewBox="0 0 64 64" fill="none" stroke="#C9A961" stroke-width="2" stroke-linecap="round">
+          <path d="M14 44 c0-14 6-26 16-30 4 10 12 14 20 12-2 14-12 24-26 24-6 0-10-2-10-6z"/>
+          <path d="M40 20 c6-4 12-4 16 0 M44 12 c4-4 10-5 14-2" opacity=".8"/>
+          <path d="M18 52 c8 4 18 4 26 0" opacity=".6"/>
+        </svg>
+        <h3>Friday Brunch &amp; Live Jazz</h3>
+        <p>The signature Cairo brunch — live jazz ensemble, champagne flow, six stations and a terrace seat over the Corniche. Every Friday from 12:30.</p>
+        <a class="link-arrow" href="#reserve">Book the brunch</a>
+      </article>
+
+      <article class="event-card reveal" style="--d:.2s">
+        <span class="event-num">03</span>
+        <svg class="event-ic" viewBox="0 0 64 64" fill="none" stroke="#C9A961" stroke-width="2" stroke-linecap="round">
+          <rect x="10" y="22" width="44" height="30" rx="3"/>
+          <path d="M24 22 v-6 a4 4 0 0 1 4-4 h8 a4 4 0 0 1 4 4 v6"/>
+          <path d="M10 34 h44" opacity=".7"/>
+          <path d="M28 34 h8 v6 h-8 z" opacity=".8"/>
+        </svg>
+        <h3>Corporate &amp; Catering</h3>
+        <p>Boardroom lunches, product launches and gala dinners for up to 300 guests — dedicated host, custom menus and seamless service by the Nile.</p>
+        <a class="link-arrow" href="#reserve">Request a proposal</a>
+      </article>
+
+      <article class="event-card reveal" style="--d:.3s">
+        <span class="event-num">04</span>
+        <svg class="event-ic" viewBox="0 0 64 64" fill="none" stroke="#C9A961" stroke-width="2" stroke-linecap="round">
+          <path d="M12 32 h40 v20 h-40 z"/>
+          <path d="M32 32 v20" opacity=".7"/>
+          <path d="M12 38 h40" opacity=".7"/>
+          <path d="M32 32 c-14 0-16-14-8-16 6 0 8 8 8 16 0-8 2-16 8-16 8 0 6 16-8 16z"/>
+          <path d="M32 14 v-6" opacity=".8"/>
+        </svg>
+        <h3>Birthdays &amp; Private Dining</h3>
+        <p>Nile-view private rooms, bespoke cake, floral styling, personalised menus and a dedicated waiter — celebrate exactly the way you imagined.</p>
+        <a class="link-arrow" href="#reserve">Design your evening</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== REVIEWS ===================== -->
+<section class="reviews section-dark" id="reviews">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow"><i></i>Guest Stories<i></i></p>
+      <h2>4.8 <span class="gold">★</span> from 980+ Reviews</h2>
+    </header>
+
+    <div class="quote-box reveal" id="quoteBox" style="--d:.1s">
+      <span class="quote-mark" aria-hidden="true">“</span>
+      <blockquote class="quote is-active" data-q="0">
+        <p>The seafood bar and the dessert palace alone are worth the visit — but it was the Nile view at sunset that made it unforgettable. Impeccable service.</p>
+        <footer>— Nadia H. <span>· Google Review</span></footer>
+      </blockquote>
+      <blockquote class="quote" data-q="1">
+        <p>We hosted our company dinner for 80 guests. Everything from the jazz trio to the carving station was flawless. The team made us feel like royalty.</p>
+        <footer>— Omar S. <span>· TripAdvisor</span></footer>
+      </blockquote>
+      <blockquote class="quote" data-q="2">
+        <p>Friday brunch is a Cairo institution. Live saxophone, sparkling, and a buffet that keeps giving. Already booked our table for next week, صراحة ممتاز.</p>
+        <footer>— Layla M. <span>· Google Review</span></footer>
+      </blockquote>
+      <div class="quote-dots" id="quoteDots" role="tablist" aria-label="Reviews"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== RESERVATIONS ===================== -->
+<section class="reserve section-light" id="reserve">
+  <div class="container reserve-grid">
+
+    <aside class="reserve-info reveal">
+      <p class="eyebrow light"><i></i>Reservations</p>
+      <h2>Your Table<br>Awaits</h2>
+      <p class="info-lede">Tell us when you are coming — our concierge confirms every request personally within fifteen minutes.</p>
+
+      <ul class="info-list">
+        <li>
+          <span class="info-ic">✆</span>
+          <div><small>Call us</small><a href="tel:+201277233582">+20 12 772 33582</a></div>
+        </li>
+        <li>
+          <span class="info-ic">◈</span>
+          <div><small>WhatsApp concierge</small><a href="https://wa.me/201277233582" target="_blank" rel="noopener">Chat with us instantly</a></div>
+        </li>
+        <li>
+          <span class="info-ic">⌖</span>
+          <div><small>Find us</small><a href="https://maps.google.com/?q=1113+Corniche+El+Nil,+Downtown+Cairo" target="_blank" rel="noopener">1113 Corniche El Nil,<br>Downtown Cairo</a></div>
+        </li>
+        <li>
+          <span class="info-ic">✦</span>
+          <div><small>Dress code</small><span>Smart elegance</span></div>
+        </li>
+      </ul>
+
+      <div class="info-rating">
+        <span class="stars-row">★ ★ ★ ★ ★</span>
+        <strong>4.8</strong>
+        <span>· 980+ reviews</span>
+      </div>
+    </aside>
+
+    <div class="reserve-form-wrap reveal" style="--d:.15s">
+      <form class="reserve-form" id="reserveForm" novalidate>
+        <div class="form-head">
+          <h3>Book Your Table</h3>
+          <p>Breakfast · Lunch · Dinner — daily</p>
+        </div>
+
+        <div class="field-row">
+          <label class="field">
+            <span>Full name *</span>
+            <input type="text" name="name" id="fName" placeholder="Your name" required autocomplete="name">
+            <em class="err">Please share your name</em>
+          </label>
+          <label class="field">
+            <span>Phone *</span>
+            <input type="tel" name="phone" id="fPhone" placeholder="+20 12 345 6789" required pattern="[0-9+\s\-\(\)]{9,}" autocomplete="tel">
+            <em class="err">Enter a valid phone number</em>
+          </label>
+        </div>
+
+        <div class="field-row">
+          <label class="field">
+            <span>Date *</span>
+            <input type="date" name="date" id="fDate" required>
+            <em class="err">Choose a date</em>
+          </label>
+          <label class="field">
+            <span>Time *</span>
+            <select name="time" id="fTime" required>
+              <option value="">Select a sitting</option>
+              <optgroup label="Breakfast · 07:00 – 11:00">
+                <option>07:00</option><option>08:00</option><option>09:00</option><option>10:00</option>
+              </optgroup>
+              <optgroup label="Lunch · 12:30 – 16:00">
+                <option>12:30</option><option>13:30</option><option>14:30</option><option>15:30</option>
+              </optgroup>
+              <optgroup label="Dinner · 18:30 – 23:00">
+                <option>18:30</option><option>19:30</option><option>20:30</option><option>21:30</option><option>22:00</option>
+              </optgroup>
+            </select>
+            <em class="err">Choose a sitting</em>
+          </label>
+          <label class="field">
+            <span>Guests *</span>
+            <select name="guests" id="fGuests" required>
+              <option value="">Party size</option>
+              <option>1 guest</option><option>2 guests</option><option>3 guests</option><option>4 guests</option>
+              <option>5 guests</option><option>6 guests</option><option>7 guests</option><option>8 guests</option>
+              <option>9+ guests</option>
+            </select>
+            <em class="err">Select party size</em>
+          </label>
+        </div>
+
+        <fieldset class="tables">
+          <legend>Table preference</legend>
+          <div class="table-opts">
+            <label class="table-opt">
+              <input type="radio" name="table" value="Window Seat" checked>
+              <span class="table-face">
+                <strong>Window Seat</strong>
+                <small>City lights of Downtown</small>
+              </span>
+            </label>
+            <label class="table-opt">
+              <input type="radio" name="table" value="Garden View">
+              <span class="table-face">
+                <strong>Garden View</strong>
+                <small>Quiet courtyard terrace</small>
+              </span>
+            </label>
+            <label class="table-opt vip">
+              <input type="radio" name="table" value="Nile View (VIP)">
+              <span class="table-face">
+                <em class="vip-tag">VIP</em>
+                <strong>Nile View</strong>
+                <small>Front-row over the river</small>
+              </span>
+            </label>
+          </div>
+        </fieldset>
+
+        <label class="field">
+          <span>Occasion <i>(optional)</i></span>
+          <select name="occasion" id="fOccasion">
+            <option value="">Just a lovely meal</option>
+            <option>Birthday</option><option>Anniversary</option><option>Business dinner</option>
+            <option>Date night</option><option>Family gathering</option>
+          </select>
+        </label>
+
+        <label class="field">
+          <span>Notes <i>(optional)</i></span>
+          <textarea name="notes" id="fNotes" rows="3" placeholder="Allergies, celebration details, high chair…"></textarea>
+        </label>
+
+        <button class="btn btn-gold btn-block" type="submit">Request Reservation</button>
+        <p class="form-note">Confirmed personally by our concierge — via call or WhatsApp — within 15 minutes.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer" id="contact">
+  <div class="footer-line" aria-hidden="true"></div>
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <span class="footer-logo">CULINA</span>
+      <p>Fine dining buffet at the Ritz-Carlton Nile — where Cairo’s golden light meets the world’s finest tables.</p>
+      <span class="footer-ar" dir="rtl" lang="ar">فخامة على ضفاف النيل</span>
+    </div>
+
+    <nav class="footer-col" aria-label="Explore">
+      <h4>Explore</h4>
+      <a href="#buffet">The Buffet</a>
+      <a href="#events">Special Events</a>
+      <a href="#reviews">Guest Reviews</a>
+      <a href="#reserve">Reservations</a>
+    </nav>
+
+    <div class="footer-col">
+      <h4>Visit</h4>
+      <p>1113 Corniche El Nil<br>Downtown Cairo, Egypt</p>
+      <p>Open daily<br>Breakfast · Lunch · Dinner</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="tel:+201277233582">+20 12 772 33582</a>
+      <a href="https://wa.me/201277233582" target="_blank" rel="noopener">WhatsApp Concierge</a>
+      <a href="https://maps.google.com/?q=1113+Corniche+El+Nil,+Downtown+Cairo" target="_blank" rel="noopener">Get Directions</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© <span id="year">2026</span> Culina — Ritz-Carlton Nile, Cairo. All rights reserved.</span>
+    <span>4.8 ★ · 980+ reviews</span>
+  </div>
+</footer>
+
+<!-- ===================== SUCCESS MODAL ===================== -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+  <div class="modal-card">
+    <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+    <svg class="modal-check" viewBox="0 0 80 80" fill="none">
+      <circle cx="40" cy="40" r="36" stroke="#C9A961" stroke-width="2"/>
+      <path class="tick" d="M25 41 l11 11 20-23" stroke="#C9A961" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <h3 id="modalTitle">Request Received</h3>
+    <p class="modal-sub" id="modalSub">Thank you — our concierge will confirm shortly.</p>
+    <ul class="modal-summary" id="modalSummary"></ul>
+    <div class="modal-actions">
+      <a class="btn btn-gold" id="modalWhats" href="#" target="_blank" rel="noopener">Confirm via WhatsApp</a>
+      <button class="btn btn-ghost dark" id="modalDone" type="button">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- WhatsApp float -->
+<a class="wa-float" href="https://wa.me/201277233582" target="_blank" rel="noopener" aria-label="Chat with our WhatsApp concierge">
+  <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16.04 3C9.4 3 4 8.4 4 15.04c0 2.12.56 4.18 1.62 6L4 29l8.1-1.68a12 12 0 0 0 5.94 1.56h.01C22.68 28.88 28 23.48 28 16.84 28 10.2 22.68 3 16.04 3zm0 21.86h-.01c-1.68 0-3.32-.46-4.76-1.32l-.34-.2-4.8 1 1.02-4.68-.22-.36a9.7 9.7 0 0 1-1.5-5.16c0-5.42 4.42-9.83 9.85-9.83 2.63 0 5.1 1.02 6.96 2.88a9.76 9.76 0 0 1 2.88 6.96c0 5.43-4.42 9.84-9.86 9.84zm5.4-7.36c-.3-.14-1.76-.86-2.03-.96-.27-.1-.47-.14-.67.14-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.08-.3-.14-1.26-.46-2.4-1.48-.89-.79-1.48-1.76-1.66-2.06-.17-.3-.02-.46.13-.6.14-.14.3-.35.46-.53.14-.17.2-.3.3-.5.1-.2.05-.37-.02-.51-.08-.14-.66-1.62-.91-2.2-.24-.58-.48-.5-.66-.5h-.57c-.2 0-.51.07-.78.37-.27.3-1.02 1-1.02 2.44 0 1.44 1.05 2.83 1.2 3.03.14.2 2.06 3.24 5 4.54.7.3 1.24.49 1.66.62.7.22 1.34.19 1.84.12.56-.08 1.76-.72 2-1.42.25-.7.25-1.3.18-1.42-.08-.13-.28-.2-.57-.34z"/></svg>
+  <span class="wa-tip">WhatsApp Concierge</span>
+</a>
+
+<script src="main.js"></script>
+</body>
+</html>
